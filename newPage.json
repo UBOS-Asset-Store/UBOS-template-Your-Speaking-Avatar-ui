@@ -54,13 +54,13 @@
                                         "children": [
                                             {
                                                 "isVisible": true,
-                                                "backgroundColor": "#FFFFFF",
-                                                "widgetName": "step4_container",
+                                                "backgroundColor": "",
+                                                "widgetName": "form_container",
                                                 "containerStyle": "card",
                                                 "borderColor": "transparent",
                                                 "borderWidth": "0",
                                                 "borderRadius": "10",
-                                                "boxShadow": "VARIANT3",
+                                                "boxShadow": "VARIANT1",
                                                 "animateLoading": true,
                                                 "children": [
                                                     {
@@ -81,7 +81,7 @@
                                                                 "fontSize": "HEADING1",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
-                                                                "textColor": "#2E3D49",
+                                                                "textColor": "#5892c8",
                                                                 "truncateButtonColor": "#FFC13D",
                                                                 "widgetName": "step4_title",
                                                                 "shouldTruncate": false,
@@ -106,158 +106,6 @@
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
                                                                 "classStyle": ""
-                                                            },
-                                                            {
-                                                                "isVisible": true,
-                                                                "backgroundColor": "",
-                                                                "widgetName": "uploader_container",
-                                                                "containerStyle": "card",
-                                                                "borderColor": "transparent",
-                                                                "borderWidth": "0",
-                                                                "borderRadius": "0",
-                                                                "boxShadow": "NONE",
-                                                                "animateLoading": true,
-                                                                "children": [
-                                                                    {
-                                                                        "isVisible": true,
-                                                                        "widgetName": "Canvas10",
-                                                                        "version": 1,
-                                                                        "detachFromLayout": true,
-                                                                        "type": "CANVAS_WIDGET",
-                                                                        "hideCard": true,
-                                                                        "displayName": "Canvas",
-                                                                        "key": "ov036blkjg",
-                                                                        "containerStyle": "none",
-                                                                        "canExtend": false,
-                                                                        "children": [
-                                                                            {
-                                                                                "isVisible": true,
-                                                                                "animateLoading": true,
-                                                                                "text": "",
-                                                                                "buttonColor": "#231F20",
-                                                                                "buttonVariant": "TERTIARY",
-                                                                                "placement": "CENTER",
-                                                                                "widgetName": "uploadAvatar_btn",
-                                                                                "isDisabled": "{{user_avatar_input.text ? false : true}}",
-                                                                                "isDefaultClickDisabled": true,
-                                                                                "recaptchaType": "V3",
-                                                                                "version": 1,
-                                                                                "classStyle": "add_btn",
-                                                                                "type": "BUTTON_WIDGET",
-                                                                                "hideCard": false,
-                                                                                "displayName": "Button",
-                                                                                "key": "1aibppwses",
-                                                                                "iconSVG": "/static/media/icon.cca02633.svg",
-                                                                                "widgetId": "c90ulv2myv",
-                                                                                "renderMode": "CANVAS",
-                                                                                "isLoading": false,
-                                                                                "parentColumnSpace": 7.48779296875,
-                                                                                "parentRowSpace": 10,
-                                                                                "leftColumn": 55,
-                                                                                "rightColumn": 63,
-                                                                                "topRow": 3,
-                                                                                "bottomRow": 7,
-                                                                                "parentId": "i85ra6ffr0",
-                                                                                "dynamicBindingPathList": [
-                                                                                    {
-                                                                                        "key": "isDisabled"
-                                                                                    }
-                                                                                ],
-                                                                                "dynamicTriggerPathList": [
-                                                                                    {
-                                                                                        "key": "onClick"
-                                                                                    }
-                                                                                ],
-                                                                                "borderRadius": "ROUNDED",
-                                                                                "onClick": "{{uploadAvatar.run(() => getAllAvatars.run(), () => {})}}",
-                                                                                "dynamicPropertyPathList": [
-                                                                                    {
-                                                                                        "key": "isDisabled"
-                                                                                    }
-                                                                                ],
-                                                                                "boxShadow": "VARIANT3",
-                                                                                "iconName": "add",
-                                                                                "iconAlign": "left"
-                                                                            },
-                                                                            {
-                                                                                "isVisible": true,
-                                                                                "label": "Choose actor or provide you image URL",
-                                                                                "labelPosition": "Top",
-                                                                                "labelAlignment": "left",
-                                                                                "labelWidth": 5,
-                                                                                "widgetName": "user_avatar_input",
-                                                                                "version": 2,
-                                                                                "defaultText": "",
-                                                                                "iconAlign": "left",
-                                                                                "autoFocus": false,
-                                                                                "labelStyle": "",
-                                                                                "resetOnSubmit": false,
-                                                                                "isRequired": false,
-                                                                                "isDisabled": false,
-                                                                                "animateLoading": true,
-                                                                                "classStyle": "",
-                                                                                "inputType": "TEXT",
-                                                                                "buttonPosition": "right",
-                                                                                "type": "INPUT_WIDGET_V2",
-                                                                                "hideCard": false,
-                                                                                "displayName": "Input",
-                                                                                "key": "vnipyjtf4n",
-                                                                                "iconSVG": "/static/media/icon.9f505595.svg",
-                                                                                "widgetId": "m2jwq7flz6",
-                                                                                "renderMode": "CANVAS",
-                                                                                "isLoading": false,
-                                                                                "parentColumnSpace": 7.48779296875,
-                                                                                "parentRowSpace": 10,
-                                                                                "leftColumn": 0,
-                                                                                "rightColumn": 53,
-                                                                                "topRow": 0,
-                                                                                "bottomRow": 7,
-                                                                                "parentId": "i85ra6ffr0",
-                                                                                "errorMessage": "Please provide a valid URL",
-                                                                                "dynamicBindingPathList": [
-                                                                                    {
-                                                                                        "key": "validation"
-                                                                                    }
-                                                                                ],
-                                                                                "dynamicTriggerPathList": [],
-                                                                                "validation": "{{user_avatar_input.text.startsWith(\"https://\")}}",
-                                                                                "tooltip": "Photo requirements for optimized results:\n\nMedium shot, frontal facing. \n\nNeutral facial expression, closed mouth. \n\nGood and solid lighting.\n\n",
-                                                                                "placeholderText": "https://your_image_url.png"
-                                                                            }
-                                                                        ],
-                                                                        "minHeight": 400,
-                                                                        "widgetId": "i85ra6ffr0",
-                                                                        "renderMode": "CANVAS",
-                                                                        "isLoading": false,
-                                                                        "parentColumnSpace": 1,
-                                                                        "parentRowSpace": 1,
-                                                                        "leftColumn": 0,
-                                                                        "rightColumn": 200.484375,
-                                                                        "topRow": 0,
-                                                                        "bottomRow": 390,
-                                                                        "parentId": "rbk5grb8s0"
-                                                                    }
-                                                                ],
-                                                                "version": 1,
-                                                                "classStyle": "uploader_container",
-                                                                "type": "CONTAINER_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "Container",
-                                                                "key": "s86j83nhu7",
-                                                                "iconSVG": "/static/media/icon.1977dca3.svg",
-                                                                "isCanvas": true,
-                                                                "widgetId": "rbk5grb8s0",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 8.353515625,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
-                                                                "topRow": 12,
-                                                                "bottomRow": 21,
-                                                                "parentId": "27v62960lv",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -739,8 +587,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 21,
-                                                                "bottomRow": 60,
+                                                                "topRow": 45,
+                                                                "bottomRow": 76,
                                                                 "parentId": "27v62960lv",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -815,7 +663,7 @@
                                                                 "labelWidth": 5,
                                                                 "widgetName": "d_id_key_input",
                                                                 "version": 2,
-                                                                "defaultText": "{{getCredentials.data.d_idKey}}",
+                                                                "defaultText": "\n",
                                                                 "iconAlign": "left",
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
@@ -838,14 +686,10 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 5,
-                                                                "bottomRow": 12,
+                                                                "topRow": 4,
+                                                                "bottomRow": 11,
                                                                 "parentId": "27v62960lv",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "defaultText"
-                                                                    }
-                                                                ],
+                                                                "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
                                                                 "placeholderText": "eS3nXXXzaGtvQG41dGxvb3suY29t:_XXXXXXu62menc2Soljl5"
                                                             },
@@ -873,8 +717,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 11,
-                                                                "topRow": 60,
-                                                                "bottomRow": 72,
+                                                                "topRow": 79,
+                                                                "bottomRow": 87,
                                                                 "parentId": "27v62960lv",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
@@ -904,12 +748,218 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 53,
                                                                 "rightColumn": 64,
-                                                                "topRow": 60,
-                                                                "bottomRow": 72,
+                                                                "topRow": 82,
+                                                                "bottomRow": 87,
                                                                 "parentId": "27v62960lv",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
                                                                 "classStyle": "technology"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "Generate",
+                                                                "buttonColor": "#38AFF4",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button2",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "generate_btn",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "94iwv0v41l",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "0rywna8uix",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 8.6484375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 13,
+                                                                "rightColumn": 52,
+                                                                "topRow": 82,
+                                                                "bottomRow": 87,
+                                                                "parentId": "27v62960lv",
+                                                                "borderRadius": "ROUNDED",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "iconName": "clean",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{generateVideo.run()}}"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "label": "Provide your text",
+                                                                "labelPosition": "Top",
+                                                                "labelAlignment": "left",
+                                                                "labelWidth": 5,
+                                                                "widgetName": "content_input",
+                                                                "version": 2,
+                                                                "defaultText": "",
+                                                                "iconAlign": "left",
+                                                                "autoFocus": false,
+                                                                "labelStyle": "",
+                                                                "resetOnSubmit": true,
+                                                                "isRequired": false,
+                                                                "isDisabled": false,
+                                                                "animateLoading": true,
+                                                                "classStyle": "",
+                                                                "inputType": "TEXT",
+                                                                "buttonPosition": "right",
+                                                                "type": "INPUT_WIDGET_V2",
+                                                                "hideCard": false,
+                                                                "displayName": "Input",
+                                                                "key": "ixoebchgix",
+                                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                                "widgetId": "0o1svgioz0",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 8.6484375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 20,
+                                                                "bottomRow": 36,
+                                                                "parentId": "27v62960lv",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [],
+                                                                "placeholderText": "Hello! I'm your speaking avatar!"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "placeholderText": "Select option",
+                                                                "labelText": "Choose voice",
+                                                                "labelPosition": "Top",
+                                                                "labelAlignment": "left",
+                                                                "labelWidth": 5,
+                                                                "options": "[\n  {\n    \"label\": \"Domi\",\n    \"value\": \"AZnzlk1XvdvUeBnXmlld\"\n  },\n  {\n    \"label\": \"Rachel\",\n    \"value\": \"21m00Tcm4TlvDq8ikWAM\"\n  },\n  {\n    \"label\": \"Bella\",\n    \"value\": \"EXAVITQu4vr4xnSDxMaL\"\n  },\n     {\n    \"label\": \"Antoni\",\n    \"value\": \"ErXwobaYiN019PkySvjV\"\n  },\n      {\n    \"label\": \"Elli\",\n    \"value\": \"MF3mGyEYCl7XYWbV9V6O\"\n  },\n  {\n    \"label\": \"Josh\",\n    \"value\": \"TxGEqnHWrfWFTfGW9XjX\"\n  },\n  {\n    \"label\": \"Arnold\",\n    \"value\": \"VR6AewLTigWG4xSOukaG\"\n  },\n  {\n    \"label\": \"Adam\",\n    \"value\": \"pNInz6obpgDQGcFmaJgB\"\n  },\n  {\n    \"label\": \"Sam\",\n    \"value\": \"yoZ06aMxZJJ28mfd3POQ\"\n  }\n]",
+                                                                "serverSideFiltering": false,
+                                                                "widgetName": "voice_select",
+                                                                "defaultOptionValue": " {\n    \"label\": \"Bella\",\n    \"value\": \"EXAVITQu4vr4xnSDxMaL\"\n  }",
+                                                                "version": 1,
+                                                                "isFilterable": true,
+                                                                "isRequired": false,
+                                                                "isDisabled": false,
+                                                                "animateLoading": true,
+                                                                "type": "SELECT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Select",
+                                                                "key": "61671avi6u",
+                                                                "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                                "widgetId": "f8oiqdeefc",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 8.6484375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 12,
+                                                                "bottomRow": 19,
+                                                                "parentId": "27v62960lv",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "label": "Choose actor or provide you image URL",
+                                                                "labelPosition": "Top",
+                                                                "labelAlignment": "left",
+                                                                "labelWidth": 5,
+                                                                "widgetName": "user_avatar_input",
+                                                                "version": 2,
+                                                                "defaultText": "",
+                                                                "iconAlign": "left",
+                                                                "autoFocus": false,
+                                                                "labelStyle": "",
+                                                                "resetOnSubmit": false,
+                                                                "isRequired": false,
+                                                                "isDisabled": false,
+                                                                "animateLoading": true,
+                                                                "classStyle": "",
+                                                                "inputType": "TEXT",
+                                                                "buttonPosition": "right",
+                                                                "type": "INPUT_WIDGET_V2",
+                                                                "hideCard": false,
+                                                                "displayName": "Input",
+                                                                "key": "vnipyjtf4n",
+                                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                                "widgetId": "m2jwq7flz6",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 7.48779296875,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 55,
+                                                                "topRow": 37,
+                                                                "bottomRow": 44,
+                                                                "parentId": "27v62960lv",
+                                                                "errorMessage": "Please provide a valid URL",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "validation"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "validation": "{{user_avatar_input.text.startsWith(\"https://\")}}",
+                                                                "tooltip": "Photo requirements for optimized results:\n\nMedium shot, frontal facing. \n\nNeutral facial expression, closed mouth. \n\nGood and solid lighting.\n\n",
+                                                                "placeholderText": "https://your_image_url.png"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "",
+                                                                "buttonColor": "#38AFF4",
+                                                                "buttonVariant": "TERTIARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "uploadAvatar_btn",
+                                                                "isDisabled": "{{user_avatar_input.text ? false : true}}",
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "1aibppwses",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "c90ulv2myv",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 7.48779296875,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 56,
+                                                                "rightColumn": 64,
+                                                                "topRow": 40,
+                                                                "bottomRow": 44,
+                                                                "parentId": "27v62960lv",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "onClick": "{{uploadAvatar.run(() => getAllAvatars.run(), () => {})}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    }
+                                                                ],
+                                                                "boxShadow": "VARIANT3",
+                                                                "iconName": "add",
+                                                                "iconAlign": "left",
+                                                                "classStyleBtn": ""
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -921,12 +971,12 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 200.484375,
                                                         "topRow": 0,
-                                                        "bottomRow": 740,
+                                                        "bottomRow": 890,
                                                         "parentId": "5oev5mkwvf"
                                                     }
                                                 ],
                                                 "version": 1,
-                                                "classStyle": "gradient_container",
+                                                "classStyle": "form_container",
                                                 "type": "CONTAINER_WIDGET",
                                                 "hideCard": false,
                                                 "displayName": "Container",
@@ -939,17 +989,18 @@
                                                 "parentColumnSpace": 8.353515625,
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
-                                                "rightColumn": 37,
+                                                "rightColumn": 32,
                                                 "topRow": 0,
-                                                "bottomRow": 74,
+                                                "bottomRow": 90,
                                                 "parentId": "3e13cqqfvv",
                                                 "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": []
+                                                "dynamicTriggerPathList": [],
+                                                "shouldScrollContents": true
                                             },
                                             {
-                                                "isVisible": true,
-                                                "backgroundColor": "#FFFFFF",
-                                                "widgetName": "Container1",
+                                                "isVisible": "{{main.env.NODEREDURL + '/download'? true : false}}",
+                                                "backgroundColor": "",
+                                                "widgetName": "answer_container",
                                                 "containerStyle": "card",
                                                 "borderColor": "transparent",
                                                 "borderWidth": "0",
@@ -971,7 +1022,7 @@
                                                         "children": [
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "<h2 style='fontsize:24px'>Enjoy Result!</h2>",
+                                                                "text": "<h2 style=\"text-align: center; color:#5892c8; font-size:24px\">Enjoy Result!</h2>",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -1003,7 +1054,7 @@
                                                             {
                                                                 "isVisible": true,
                                                                 "widgetName": "Video1",
-                                                                "url": "https://assets.appsmith.com/widgets/bird.mp4",
+                                                                "url": "{{main.env.NODEREDURL + '/download'}}",
                                                                 "autoPlay": false,
                                                                 "version": 1,
                                                                 "animateLoading": true,
@@ -1020,15 +1071,21 @@
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
                                                                 "topRow": 7,
-                                                                "bottomRow": 35,
-                                                                "parentId": "opearurfud"
+                                                                "bottomRow": 37,
+                                                                "parentId": "opearurfud",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "url"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": []
                                                             },
                                                             {
                                                                 "isVisible": true,
                                                                 "animateLoading": true,
                                                                 "text": "Download",
-                                                                "buttonColor": "#F6F7F8",
-                                                                "buttonVariant": "PRIMARY",
+                                                                "buttonColor": "#38AFF4",
+                                                                "buttonVariant": "TERTIARY",
                                                                 "placement": "CENTER",
                                                                 "widgetName": "Button1",
                                                                 "isDisabled": false,
@@ -1048,15 +1105,25 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 36,
-                                                                "bottomRow": 40,
+                                                                "topRow": 39,
+                                                                "bottomRow": 44,
                                                                 "parentId": "opearurfud",
                                                                 "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": [],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
                                                                 "iconName": "download",
                                                                 "iconAlign": "left",
                                                                 "borderRadius": "ROUNDED",
-                                                                "boxShadow": "VARIANT3"
+                                                                "boxShadow": "VARIANT3",
+                                                                "onClick": "{{navigateTo(main.env.NODEREDURL + '/download',)}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -1068,12 +1135,12 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 372,
                                                         "topRow": 0,
-                                                        "bottomRow": 420,
+                                                        "bottomRow": 460,
                                                         "parentId": "6qrwrmrebd"
                                                     }
                                                 ],
                                                 "version": 1,
-                                                "classStyle": "",
+                                                "classStyle": "answer_container",
                                                 "type": "CONTAINER_WIDGET",
                                                 "hideCard": false,
                                                 "displayName": "Container",
@@ -1085,13 +1152,23 @@
                                                 "isLoading": false,
                                                 "parentColumnSpace": 15.5,
                                                 "parentRowSpace": 10,
-                                                "leftColumn": 37,
+                                                "leftColumn": 32,
                                                 "rightColumn": 64,
                                                 "topRow": 0,
-                                                "bottomRow": 74,
+                                                "bottomRow": 90,
                                                 "parentId": "3e13cqqfvv",
-                                                "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": []
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "isVisible"
+                                                    }
+                                                ],
+                                                "dynamicTriggerPathList": [],
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "isVisible"
+                                                    }
+                                                ],
+                                                "shouldScrollContents": true
                                             }
                                         ],
                                         "minHeight": 400,
@@ -1103,12 +1180,12 @@
                                         "leftColumn": 0,
                                         "rightColumn": 377.25,
                                         "topRow": 0,
-                                        "bottomRow": 760,
+                                        "bottomRow": 920,
                                         "parentId": "p4gwefj0yn"
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "",
+                                "classStyle": "main_container",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -1123,8 +1200,11 @@
                                 "leftColumn": 0,
                                 "rightColumn": 64,
                                 "topRow": 0,
-                                "bottomRow": 77,
-                                "parentId": "0"
+                                "bottomRow": 108,
+                                "parentId": "0",
+                                "dynamicBindingPathList": [],
+                                "dynamicTriggerPathList": [],
+                                "shouldScrollContents": true
                             }
                         ],
                         "dynamicTriggerPathList": []
@@ -1133,13 +1213,9 @@
                         "MainContainer",
                         "main_container",
                         "Canvas1",
-                        "step4_container",
+                        "form_container",
                         "Canvas9_4",
                         "step4_title",
-                        "uploader_container",
-                        "Canvas10",
-                        "uploadAvatar_btn",
-                        "user_avatar_input",
                         "actors_list",
                         "CustomWrapperCanvas1",
                         "actors_item_container",
@@ -1149,7 +1225,12 @@
                         "d_id_key_input",
                         "d_id_img",
                         "ubos_img",
-                        "Container1",
+                        "Button2",
+                        "content_input",
+                        "voice_select",
+                        "user_avatar_input",
+                        "uploadAvatar_btn",
+                        "answer_container",
                         "Canvas11",
                         "Text1",
                         "Video1",
@@ -1159,14 +1240,12 @@
                     "layoutOnLoadActions": [
                         [
                             {
-                                "_id": "6584341220e9e03464a11cf4",
-                                "id": "6584341220e9e03464a11cf4",
+                                "_id": "658440e320e9e03464a11cf6",
+                                "id": "658440e320e9e03464a11cf6",
                                 "confirmBeforeExecute": false,
-                                "name": "getCredentials",
+                                "name": "getAllAvatars",
                                 "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.NODEREDURL"
-                                ],
+                                "jsonPathKeys": [],
                                 "timeoutInMillisecond": 10000
                             }
                         ]

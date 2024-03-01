@@ -1,170 +1,5 @@
 [
     {
-        "_id": "6584341220e9e03464a11cf4",
-        "applicationId": "videoaiui",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getCredentials",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.NODEREDURL}}/getCredentials"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "home",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [
-                    {
-                        "value": "application/json",
-                        "key": "content-type"
-                    }
-                ],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ]
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.NODEREDURL"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-12-21T12:48:18.266Z",
-        "updatedAt": "2023-12-22T08:33:30.462Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "6584344020e9e03464a11cf5",
-        "applicationId": "videoaiui",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "saveCredentials",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.NODEREDURL}}/saveCredentials"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "home",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "POST",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "application/json"
-                    }
-                ],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "body": "{\n\t\"botName\": {{JSON.stringify(bot_name_input.text)}},\n\t\"botToken\": {{JSON.stringify(bot_token_input.text)}},\n\t\"openAIKey\": {{JSON.stringify(openai_key_input.text)}},\n\t\"chatVersion\": {{JSON.stringify(chat_version_select.selectedOptionValue)}},\n\t\"elevenlabsKey\": {{JSON.stringify(elevenlabs_key_input.text)}},\n\t\"elevenlabsVoice\": {{JSON.stringify(elevenlabs_voice_select.selectedOptionValue)}},\n\t\"d_idKey\": {{JSON.stringify(d_id_key_input.text)}},\n\t\"d_idAvatar\": {{JSON.stringify(actors_list.selectedItem.presenter_id)}},\n\t\"prompt\": {{JSON.stringify(prompt_input.text)}},\n\t\"greetings\": {{JSON.stringify(greetings_input.text)}},\n\t\"error\": {{JSON.stringify(error_input.text)}}\n}"
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
-                {
-                    "key": "body"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.NODEREDURL",
-                "JSON.stringify(bot_name_input.text)",
-                "JSON.stringify(bot_token_input.text)",
-                "JSON.stringify(openai_key_input.text)",
-                "JSON.stringify(chat_version_select.selectedOptionValue)",
-                "JSON.stringify(elevenlabs_key_input.text)",
-                "JSON.stringify(elevenlabs_voice_select.selectedOptionValue)",
-                "JSON.stringify(d_id_key_input.text)",
-                "JSON.stringify(actors_list.selectedItem.presenter_id)",
-                "JSON.stringify(prompt_input.text)",
-                "JSON.stringify(greetings_input.text)",
-                "JSON.stringify(error_input.text)"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-12-21T12:49:04.621Z",
-        "updatedAt": "2024-02-06T16:40:53.585Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
         "_id": "658440e320e9e03464a11cf6",
         "applicationId": "videoaiui",
         "organizationId": "Org",
@@ -203,13 +38,10 @@
                     {
                         "value": true
                     }
-                ]
+                ],
+                "path": ""
             },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
+            "dynamicBindingPathList": [],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
@@ -219,7 +51,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-12-21T13:42:59.434Z",
-        "updatedAt": "2024-01-04T10:58:15.865Z",
+        "updatedAt": "2024-03-01T17:51:36.037Z",
         "deleted": false,
         "policies": [
             {
@@ -289,6 +121,9 @@
             },
             "dynamicBindingPathList": [
                 {
+                    "key": "path"
+                },
+                {
                     "key": "datasourceUrl"
                 },
                 {
@@ -305,7 +140,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-12-22T11:19:34.233Z",
-        "updatedAt": "2024-01-04T10:41:27.774Z",
+        "updatedAt": "2024-03-01T17:51:33.674Z",
         "deleted": false,
         "policies": [
             {
@@ -365,12 +200,10 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\t\"_id\":{{JSON.stringify(actors_list.selectedItem._id)}}\n}"
+                "body": "{\n\t\"_id\":{{JSON.stringify(actors_list.selectedItem._id)}}\n}",
+                "path": ""
             },
             "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
                 {
                     "key": "body"
                 }
@@ -379,13 +212,14 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.NODEREDURL",
-                "JSON.stringify(actors_list.selectedItem._id)"
+                "JSON.stringify(actors_list.selectedItem._id)",
+                "JSON.stringify(actors_list.selectedItem._id),JSON.stringify(actors_list.selectedItem._id),JSON.stringify(actors_list.selectedItem._id),JSON.stringify(actors_list.selectedItem._id),2023-12-22T16:23:33.024Z,2024-03-01T17:49:12.116Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env./deleteAvatar,API,home,POST,content-type,application/json,none,{\n\t\"_id\":{{JSON.stringify(actors_list.selectedItem._id),2023-12-22T16:23:33.024Z,2024-03-01T17:49:15.792Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.NODEREDURL/deleteAvatar,API,home,POST,content-type,application/json,none,{\n\t\"_id\":{{JSON.stringify(actors_list.selectedItem._id),2023-12-22T16:23:33.024Z,2024-03-01T17:49:17.111Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.NODEREDURL,JSON.stringify(actors_list.selectedItem._id),2023-12-22T16:23:33.024Z,2024-03-01T17:49:18.506Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.NODEREDURL"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-12-22T16:23:33.024Z",
-        "updatedAt": "2024-01-15T10:42:07.449Z",
+        "updatedAt": "2024-03-01T17:51:30.236Z",
         "deleted": false,
         "policies": [
             {
@@ -445,12 +279,10 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\t\"_id\":{{JSON.stringify(actors_list.selectedItem._id)}}\n}"
+                "body": "{\n\t\"_id\":{{JSON.stringify(actors_list.selectedItem.presenter_id)}}\n}",
+                "path": ""
             },
             "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
                 {
                     "key": "body"
                 }
@@ -459,13 +291,13 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.NODEREDURL",
-                "JSON.stringify(actors_list.selectedItem._id)"
+                "JSON.stringify(actors_list.selectedItem.presenter_id)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-12-25T09:00:18.423Z",
-        "updatedAt": "2023-12-25T09:01:12.598Z",
+        "updatedAt": "2024-03-01T17:51:37.175Z",
         "deleted": false,
         "policies": [
             {
@@ -601,12 +433,10 @@
                     {
                         "value": true
                     }
-                ]
+                ],
+                "path": ""
             },
             "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
                 {
                     "key": "body"
                 }
@@ -621,7 +451,155 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-12-29T11:52:35.429Z",
-        "updatedAt": "2024-02-05T13:47:27.638Z",
+        "updatedAt": "2024-03-01T17:51:38.052Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65e1d90a4a03af3cc8b2d679",
+        "applicationId": "videoaiui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "generateVideo",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.NODEREDURL}}/generateVideo"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "",
+                "body": "{\n\t\"voice\": {{JSON.stringify(voice_select.selectedOptionValue)}},\n\t\"content\": {{JSON.stringify(content_input.text)}},\n\t\"key\": {{JSON.stringify(d_id_key_input.text)}},\n\t\"avatar\": {{JSON.stringify(actors_list.selectedItem.presenter_id)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.NODEREDURL",
+                "JSON.stringify(voice_select.selectedOptionValue)",
+                "JSON.stringify(content_input.text)",
+                "JSON.stringify(d_id_key_input.text)",
+                "JSON.stringify(actors_list.selectedItem.presenter_id)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-03-01T13:32:58.654Z",
+        "updatedAt": "2024-03-01T17:51:32.497Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65e1d9474a03af3cc8b2d67a",
+        "applicationId": "videoaiui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "downloadVideo",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.NODEREDURL}}/download"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.NODEREDURL"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-03-01T13:33:59.137Z",
+        "updatedAt": "2024-03-01T17:51:31.570Z",
         "deleted": false,
         "policies": [
             {
