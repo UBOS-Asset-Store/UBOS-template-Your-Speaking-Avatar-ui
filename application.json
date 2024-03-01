@@ -1,0 +1,59 @@
+{
+    "_id": "6581a927bcfc4a944441de15",
+    "name": "did-ui",
+    "slug": "videoaiui",
+    "organizationId": "Org",
+    "isPublic": true,
+    "isMenu": false,
+    "isShowPlatformTag": true,
+    "createdAt": "2023-12-19T14:31:03.218Z",
+    "updatedAt": "2024-03-01T12:23:18.938Z",
+    "deleted": false,
+    "pages": [
+        {
+            "_id": "home",
+            "isDefault": true
+        }
+    ],
+    "policies": [
+        {
+            "permission": "makePublic:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "read:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "publish:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:applications",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "global_setting": {
+        "css": "${env.get(\"NODEREDURL\")}/css",
+        "title": "VIDEO AI CHAT-BOT",
+        "favicon": "https://ubos.tech/wp-content/uploads/2024/01/20240104-142015-removebg-preview.png"
+    },
+    "appLayout": {
+        "type": "FLUID"
+    },
+    "settings_data": {
+        "httpIns": []
+    },
+    "gitApplicationMetadata": {
+        "browserSupportedRemoteUrl": "https://github.com/UBOS-Asset-Store/UBOS-template-Your-Speaking-Avatar-ui",
+        "defaultApplicationId": "videoaiui",
+        "defaultBranchName": "main",
+        "isRepoPrivate": true,
+        "remoteUrl": "git@github.com:UBOS-Asset-Store/UBOS-template-Your-Speaking-Avatar-ui.git",
+        "repoName": "UBOS-template-Your-Speaking-Avatar-ui"
+    }
+}
