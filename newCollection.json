@@ -99,5 +99,106 @@
         "actionIds": [],
         "archivedActionIds": [],
         "archivedActions": []
+    },
+    {
+        "name": "getVideo",
+        "pageId": "home",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\nmyFun1: () => {\n\n\tsetInterval(async() => {\n     let result =  await checkVideo.run();\n\t\tif (result.read) {\n\t\t\tclearInterval('videoChecker')\n\t\t}\n}, 5000,'videoChecker')\n\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}\n\n",
+        "variables": [
+            {
+                "name": "myVar1",
+                "value": []
+            },
+            {
+                "name": "myVar2",
+                "value": {}
+            }
+        ],
+        "actions": [
+            {
+                "name": "myFun1",
+                "pageId": "home",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\n\tsetInterval(async() => {\n     let result =  await checkVideo.run();\n\t\tif (result.read) {\n\t\t\tclearInterval('videoChecker')\n\t\t}\n}, 5000,'videoChecker')\n\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "65e586aa4c6391578f2e18ab",
+                "id": "65e586aa4c6391578f2e18ab",
+                "collectionId": "65e586aa4c6391578f2e18aa",
+                "confirmBeforeExecute": false,
+                "applicationId": "videoaiui",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "getVideo.myFun1",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun2",
+                "pageId": "home",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\t//use async-await or promises\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "65e586aa4c6391578f2e18ac",
+                "id": "65e586aa4c6391578f2e18ac",
+                "collectionId": "65e586aa4c6391578f2e18aa",
+                "confirmBeforeExecute": false,
+                "applicationId": "videoaiui",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "getVideo.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "videoaiui",
+        "pluginType": "JS",
+        "_id": "65e586aa4c6391578f2e18aa",
+        "id": "65e586aa4c6391578f2e18aa",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
     }
 ]

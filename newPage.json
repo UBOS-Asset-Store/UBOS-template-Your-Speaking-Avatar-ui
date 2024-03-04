@@ -446,87 +446,6 @@
                                                                                                 },
                                                                                                 "classStyle": "{{currentItem.selected === true ? 'selected_actor actor' : \"actor\"}}\n",
                                                                                                 "onClick": "{{selectAvatar.run(() => getAllAvatars.run(), () => {})}}"
-                                                                                            },
-                                                                                            {
-                                                                                                "isVisible": "{{currentItem.source === 'user'}}\n",
-                                                                                                "animateLoading": true,
-                                                                                                "text": "",
-                                                                                                "buttonColor": "#F6F7F8",
-                                                                                                "buttonVariant": "PRIMARY",
-                                                                                                "placement": "CENTER",
-                                                                                                "widgetName": "delete_avatar_btn",
-                                                                                                "isDisabled": false,
-                                                                                                "isDefaultClickDisabled": true,
-                                                                                                "recaptchaType": "V3",
-                                                                                                "version": 1,
-                                                                                                "classStyle": "delete_avatar_btn",
-                                                                                                "type": "BUTTON_WIDGET",
-                                                                                                "hideCard": false,
-                                                                                                "displayName": "Button",
-                                                                                                "key": "bqjbrj3yp4",
-                                                                                                "iconSVG": "/static/media/icon.cca02633.svg",
-                                                                                                "widgetId": "dmkbm1djbm",
-                                                                                                "renderMode": "CANVAS",
-                                                                                                "isLoading": false,
-                                                                                                "parentColumnSpace": 7.36279296875,
-                                                                                                "parentRowSpace": 10,
-                                                                                                "leftColumn": 55,
-                                                                                                "rightColumn": 62,
-                                                                                                "topRow": 1,
-                                                                                                "bottomRow": 6,
-                                                                                                "parentId": "uoy911mgvk",
-                                                                                                "logBlackList": {
-                                                                                                    "isVisible": true,
-                                                                                                    "animateLoading": true,
-                                                                                                    "text": true,
-                                                                                                    "buttonColor": true,
-                                                                                                    "buttonVariant": true,
-                                                                                                    "placement": true,
-                                                                                                    "widgetName": true,
-                                                                                                    "isDisabled": true,
-                                                                                                    "isDefaultClickDisabled": true,
-                                                                                                    "recaptchaType": true,
-                                                                                                    "version": true,
-                                                                                                    "classStyle": true,
-                                                                                                    "type": true,
-                                                                                                    "hideCard": true,
-                                                                                                    "displayName": true,
-                                                                                                    "key": true,
-                                                                                                    "iconSVG": true,
-                                                                                                    "isCanvas": true,
-                                                                                                    "minHeight": true,
-                                                                                                    "widgetId": true,
-                                                                                                    "renderMode": true,
-                                                                                                    "isLoading": true,
-                                                                                                    "parentColumnSpace": true,
-                                                                                                    "parentRowSpace": true,
-                                                                                                    "leftColumn": true,
-                                                                                                    "rightColumn": true,
-                                                                                                    "topRow": true,
-                                                                                                    "bottomRow": true,
-                                                                                                    "parentId": true
-                                                                                                },
-                                                                                                "dynamicBindingPathList": [
-                                                                                                    {
-                                                                                                        "key": "isVisible"
-                                                                                                    }
-                                                                                                ],
-                                                                                                "dynamicTriggerPathList": [
-                                                                                                    {
-                                                                                                        "key": "onClick"
-                                                                                                    }
-                                                                                                ],
-                                                                                                "iconName": "trash",
-                                                                                                "iconAlign": "left",
-                                                                                                "borderRadius": "ROUNDED",
-                                                                                                "boxShadow": "VARIANT3",
-                                                                                                "tooltip": "",
-                                                                                                "dynamicPropertyPathList": [
-                                                                                                    {
-                                                                                                        "key": "isVisible"
-                                                                                                    }
-                                                                                                ],
-                                                                                                "onClick": "{{deleteAvatar.run(() => getAllAvatars.run(), () => {})}}"
                                                                                             }
                                                                                         ],
                                                                                         "widgetId": "uoy911mgvk",
@@ -672,7 +591,7 @@
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
                                                                 "classStyle": "",
-                                                                "inputType": "TEXT",
+                                                                "inputType": "PASSWORD",
                                                                 "buttonPosition": "right",
                                                                 "type": "INPUT_WIDGET_V2",
                                                                 "hideCard": false,
@@ -752,8 +671,18 @@
                                                                 "bottomRow": 87,
                                                                 "parentId": "27v62960lv",
                                                                 "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": [],
-                                                                "classStyle": "technology"
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "classStyle": "technology",
+                                                                "onClick": "{{clearInterval('videoChecker')}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -763,7 +692,7 @@
                                                                 "buttonVariant": "PRIMARY",
                                                                 "placement": "CENTER",
                                                                 "widgetName": "Button2",
-                                                                "isDisabled": false,
+                                                                "isDisabled": "{{!(d_id_key_input.isValid && content_input.isValid && actors_list.selectedItem.selected === true)}}",
                                                                 "isDefaultClickDisabled": true,
                                                                 "recaptchaType": "V3",
                                                                 "version": 1,
@@ -779,12 +708,16 @@
                                                                 "parentColumnSpace": 8.6484375,
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 13,
-                                                                "rightColumn": 52,
+                                                                "rightColumn": 51,
                                                                 "topRow": 82,
                                                                 "bottomRow": 87,
                                                                 "parentId": "27v62960lv",
                                                                 "borderRadius": "ROUNDED",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -792,7 +725,15 @@
                                                                 ],
                                                                 "iconName": "clean",
                                                                 "iconAlign": "left",
-                                                                "onClick": "{{generateVideo.run()}}"
+                                                                "onClick": "{{generateVideo.run(() => {getVideo.myFun1();showAlert('Your video is loading, please wait','success');getAllAvatars.run()}, () => showAlert('Ooops! Something went wrong😞','error'))}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    },
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -807,7 +748,7 @@
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
                                                                 "resetOnSubmit": true,
-                                                                "isRequired": false,
+                                                                "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
                                                                 "classStyle": "",
@@ -998,14 +939,14 @@
                                                 "shouldScrollContents": true
                                             },
                                             {
-                                                "isVisible": "{{main.env.NODEREDURL + '/download'? true : false}}",
+                                                "isVisible": "{{checkVideo.data.read}}",
                                                 "backgroundColor": "",
                                                 "widgetName": "answer_container",
                                                 "containerStyle": "card",
                                                 "borderColor": "transparent",
                                                 "borderWidth": "0",
                                                 "borderRadius": "10",
-                                                "boxShadow": "VARIANT3",
+                                                "boxShadow": "VARIANT1",
                                                 "animateLoading": true,
                                                 "children": [
                                                     {
@@ -1054,7 +995,7 @@
                                                             {
                                                                 "isVisible": true,
                                                                 "widgetName": "Video1",
-                                                                "url": "{{main.env.NODEREDURL + '/download'}}",
+                                                                "url": "{{checkVideo.data.url}}",
                                                                 "autoPlay": false,
                                                                 "version": 1,
                                                                 "animateLoading": true,
@@ -1118,12 +1059,8 @@
                                                                 "iconAlign": "left",
                                                                 "borderRadius": "ROUNDED",
                                                                 "boxShadow": "VARIANT3",
-                                                                "onClick": "{{navigateTo(main.env.NODEREDURL + '/download',)}}",
-                                                                "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "onClick"
-                                                                    }
-                                                                ]
+                                                                "onClick": "{{navigateTo(main.env.NODEREDURL + '/download',{id: generateVideo.data})}}",
+                                                                "dynamicPropertyPathList": []
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -1221,7 +1158,6 @@
                         "actors_item_container",
                         "CustomCanvas1",
                         "actors_item_img",
-                        "delete_avatar_btn",
                         "d_id_key_input",
                         "d_id_img",
                         "ubos_img",
