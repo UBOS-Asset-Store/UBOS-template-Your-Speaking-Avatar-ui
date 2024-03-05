@@ -463,7 +463,7 @@
         "pageId": "home",
         "executeOnLoad": false,
         "actionConfiguration": {
-            "body": "() => {\n\n\tsetInterval(async() => {\n     let result =  await checkVideo.run();\n\t\tif (result.read) {\n\t\t\tclearInterval('videoChecker')\n\t\t}\n}, 5000,'videoChecker')\n\n\t}",
+            "body": "() => {\n\n\tsetInterval(async() => {\n     let result =  await checkVideo.run();\n\t\tif (result.read) {\n\t\t\tclearInterval('videoChecker');\n\t\t\t\n\t\t} \n}, 5000,'videoChecker')\n\n\t}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [],
@@ -593,7 +593,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-03-04T10:40:43.864Z",
-        "updatedAt": "2024-03-04T14:43:28.322Z",
+        "updatedAt": "2024-03-05T10:29:38.993Z",
         "deleted": false,
         "policies": [
             {

@@ -677,12 +677,8 @@
                                                                     }
                                                                 ],
                                                                 "classStyle": "technology",
-                                                                "onClick": "{{clearInterval('videoChecker')}}",
-                                                                "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "onClick"
-                                                                    }
-                                                                ]
+                                                                "onClick": "",
+                                                                "dynamicPropertyPathList": []
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -901,6 +897,43 @@
                                                                 "iconName": "add",
                                                                 "iconAlign": "left",
                                                                 "classStyleBtn": ""
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "",
+                                                                "fontSize": "PARAGRAPH",
+                                                                "fontStyle": "BOLD",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "loader",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "one7i6e0hp",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "q39hb33tq5",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.5,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 13,
+                                                                "rightColumn": 51,
+                                                                "topRow": 77,
+                                                                "bottomRow": 81,
+                                                                "parentId": "27v62960lv",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "classStyle"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "dynamicPropertyPathList": [],
+                                                                "classStyle": "loader {{checkVideo.data.read}}"
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -1137,7 +1170,7 @@
                                 "leftColumn": 0,
                                 "rightColumn": 64,
                                 "topRow": 0,
-                                "bottomRow": 108,
+                                "bottomRow": 94,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": [],
@@ -1166,6 +1199,7 @@
                         "voice_select",
                         "user_avatar_input",
                         "uploadAvatar_btn",
+                        "loader",
                         "answer_container",
                         "Canvas11",
                         "Text1",

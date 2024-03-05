@@ -103,7 +103,7 @@
     {
         "name": "getVideo",
         "pageId": "home",
-        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\nmyFun1: () => {\n\n\tsetInterval(async() => {\n     let result =  await checkVideo.run();\n\t\tif (result.read) {\n\t\t\tclearInterval('videoChecker')\n\t\t}\n}, 5000,'videoChecker')\n\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}\n\n",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\nmyFun1: () => {\n\n\tsetInterval(async() => {\n     let result =  await checkVideo.run();\n\t\tif (result.read) {\n\t\t\tclearInterval('videoChecker');\n\t\t\t\n\t\t} \n}, 5000,'videoChecker')\n\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}\n\n",
         "variables": [
             {
                 "name": "myVar1",
@@ -120,7 +120,7 @@
                 "pageId": "home",
                 "executeOnLoad": false,
                 "actionConfiguration": {
-                    "body": "() => {\n\n\tsetInterval(async() => {\n     let result =  await checkVideo.run();\n\t\tif (result.read) {\n\t\t\tclearInterval('videoChecker')\n\t\t}\n}, 5000,'videoChecker')\n\n\t}",
+                    "body": "() => {\n\n\tsetInterval(async() => {\n     let result =  await checkVideo.run();\n\t\tif (result.read) {\n\t\t\tclearInterval('videoChecker');\n\t\t\t\n\t\t} \n}, 5000,'videoChecker')\n\n\t}",
                     "isAsync": true,
                     "timeoutInMillisecond": 10000,
                     "jsArguments": [],
